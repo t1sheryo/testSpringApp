@@ -33,7 +33,7 @@ public class InMemoryStudentDAO {
                 .findFirst()
                 .orElse(-1);
 
-        if(index != 1){
+        if(index > -1){
             studentList.set(index, student);
             return student;
         }
